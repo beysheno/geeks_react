@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Title({ action }) {
-  return <h1>{action}</h1>;
+export default function Title({ name }) {
+  return <h1>{name}</h1>;
 }

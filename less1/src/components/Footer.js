@@ -5,8 +5,8 @@ import NavBar from "./NavBar";
 export default function Footer() {
   return (
     <div>
-      <Title action={"Footer"} />
-      <NavBar />
+      <Title name={"Footer"} />
+      <NavBar link={"Header"} />
     </div>
   );
 }

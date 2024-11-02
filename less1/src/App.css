@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.btn {
+  background-color: #abc828;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
