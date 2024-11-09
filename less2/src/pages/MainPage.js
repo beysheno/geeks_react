@@ -20,7 +20,7 @@ export default function MainPage() {
     const handleInput = (event)=>{
         setInputValue(event.target.value);
     }
-    const tasks = [
+    let tasks = [
         {
             id:1,
             title: 'code',
