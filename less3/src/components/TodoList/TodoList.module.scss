@@ -1,0 +1,38 @@
+.ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+;
+}
+li{
+  width: 600px;
+  height: 100px;
+  border: 1px solid red;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  .info,
+  .btns {
+    display: flex;
+    gap: 10px;
+  }
+
+}
+.done{
+  display: flex;
+  gap: 10px;
+  background-color: #0eb070;
+  text-decoration: line-through;
+}
+.disabled {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+.secondaryCompleted {
+  background-color: #a8f5a8; /* Цвет кнопки Undo для завершённых задач */
+  color: black;
+}
