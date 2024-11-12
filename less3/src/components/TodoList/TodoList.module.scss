@@ -5,7 +5,7 @@
   align-items: center;
 ;
 }
-li{
+.li{
   width: 600px;
   height: 100px;
   border: 1px solid red;
@@ -28,11 +28,12 @@ li{
   text-decoration: line-through;
 }
 .disabled {
-  background-color: gray;
+  display: flex;
+  gap: 10px;
   color: white;
   cursor: not-allowed;
-}
-.secondaryCompleted {
-  background-color: #a8f5a8; /* Цвет кнопки Undo для завершённых задач */
-  color: black;
+  text-decoration: line-through;
+  ::content{
+    color: white;
+  }
 }

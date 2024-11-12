@@ -1,8 +1,12 @@
 import React from 'react';
+import classes from "./Input.module.scss";
 
 const Input = ({type = 'text', placeholder, action}) => {
     return (
-        <input  type={type} placeholder={placeholder} onChange={action}/>
+        <div className={classes.input}>
+            <input type={type} placeholder={placeholder} onChange={action}/>
+        </div>
+
     );
 };
 

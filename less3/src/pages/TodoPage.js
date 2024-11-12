@@ -31,7 +31,7 @@ const TodoPage = () => {
     }
     const handleAdd = () => {
         setTodolist(prevState => [...prevState,{
-            id:todoList[todoList.length-1].id+1,
+            id: todoList.length === 0 ? 1 : todoList[todoList.length-1].id+1,
             title: inputValue,
             completed: false,
         }
@@ -46,8 +46,7 @@ const TodoPage = () => {
         setTodolist([...todoList])
     }
     const handleDelete = (id) =>{
-        const newTodo = todoList.filter(todo=> todo.id !== id)
-        setTodolist(newTodo)
+        setTodolist(todoList.filter(todo=> todo.id !== id))
     }
     return (
         <div>

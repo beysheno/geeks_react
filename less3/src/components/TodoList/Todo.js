@@ -1,11 +1,10 @@
 import React from 'react';
 import Button from "../Button/Button";
 import classes from "./TodoList.module.scss";
-import classNames from "classnames";
 
 const Todo = ({tasks,handleDone, handleDelete}) => {
     return (
-        <li className={classNames({[classes.done]: tasks.completed})}>
+        <li className={`${classes.li} ${tasks.completed && classes.done}`}>
            <div className={classes.info}>
                <p>id: {tasks.id}</p>
                <p>Title: {tasks.title}</p>
