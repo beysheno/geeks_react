@@ -11,8 +11,8 @@ function App() {
       {/*<MainPage />*/}
       {/*  <TodoPage/>*/}
       {/*  <UserPage/>*/}
-      {/*  <PokemonPage/>*/}
-        <FormPage/>
+        <PokemonPage/>
+        {/*<FormPage/>*/}
     </div>
   );
 }

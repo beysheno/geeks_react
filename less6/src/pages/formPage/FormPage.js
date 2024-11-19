@@ -43,6 +43,7 @@ const FormPage = () => {
                     Name
                 </label>
                 <input
+                    aria-invalid={errors.name ? 'true' : 'false'}
                     className={classes.input}
                     placeholder="Your full name"
                     type="text"
@@ -54,6 +55,7 @@ const FormPage = () => {
                     Email
                 </label>
                 <input
+                    aria-invalid={errors.email ? 'true' : 'false'}
                     className={classes.input}
                     placeholder="Your email address"
                     type="email"
@@ -65,6 +67,7 @@ const FormPage = () => {
                     Password
                 </label>
                 <input
+                    aria-invalid={errors.password ? 'true' : 'false'}
                     className={classes.input}
                     placeholder="Your password"
                     type="password"
@@ -76,6 +79,7 @@ const FormPage = () => {
                     Confirm Password
                 </label>
                 <input
+                    aria-invalid={errors.password2 ? 'true' : 'false'}
                     className={classes.input}
                     placeholder="Confirm your password"
                     type="password"
