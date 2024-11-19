@@ -1,0 +1,21 @@
+
+.btn {
+  width: 75px;
+  height: 35px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  background-color: green;
+}
+.primary {
+  background-color: green;
+}
+.error {
+  background-color: red;
+}
+.secondary {
+  background-color: aquamarine;
+}
