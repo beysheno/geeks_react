@@ -1,0 +1,119 @@
+.todoComp {
+  .todo {
+    width: 740px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 30px;
+    position: relative;
+  }
+
+  .title {
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 16px;
+    width: 440px;
+    height: 54px;
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .btn {
+      border: 1px solid #fff;
+      border-radius: 12px;
+      padding: 16px;
+      width: 54px;
+      height: 54px;
+      background: transparent;
+      color: #fff;
+      transition: 0.3s ease;
+
+      &:disabled {
+        color: #9e9e9e;
+        border: 1px solid #9f9f9f;
+        cursor: not-allowed;
+      }
+
+      &:hover {
+        background: #db00ff;
+        color: #fff;
+      }
+
+      &:active {
+        color: #fff;
+        box-shadow: inset 0 0 20px 0 rgba(43, 0, 50, 0.85);
+        background: #db00ff;
+      }
+
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      background: inherit;
+
+      &:hover {
+        background-color: inherit;
+      }
+      &:disabled {
+        fill: rgba(158, 158, 158, 0.85);
+      }
+    }
+  }
+
+  .edit {
+    width: 740px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+  }
+
+  .cancel,
+  .save {
+    border: 1px solid #db00ff;
+    border-radius: 12px;
+    padding: 16px;
+    width: 100px;
+    height: 54px;
+    background: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000;
+    transition: 0.3s ease;
+
+    &:disabled {
+      color: #9e9e9e;
+      border: 1px solid #9f9f9f;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      background: #db00ff;
+      color: #fff;
+    }
+
+    &:active {
+      color: #fff;
+      box-shadow: inset 0 0 20px 0 rgba(43, 0, 50, 0.85);
+      background: #db00ff;
+    }
+  }
+}
